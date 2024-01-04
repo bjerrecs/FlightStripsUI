@@ -41,7 +41,7 @@ export const Commandstrip = () => {
         <button className="bg-[#646464] border-white border-2 w-16 h-12 pl-2 pr-2  ml-1 text-white">
           X
         </button>
-        <div className="bg-white w-fit h-12 ml-2 mr-2 justify-center items-center flex pl-4 pr-4">
+        <div className="bg-white w-44 h-12 ml-2 mr-2 justify-center items-center flex pl-4 pr-4">
           <ZuluTime />
         </div>
       </div>
