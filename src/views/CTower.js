@@ -1,6 +1,7 @@
 import React from "react";
 import { Commandstrip } from "../components/CommandStrip";
 import { Header } from "../components/Header";
+import { MSGModal } from "../components/MSGModal";
 
 export const CTower = () => {
   return (
@@ -27,7 +28,7 @@ export const CTower = () => {
         <div className="bg-[#555355] w-full h-auto ml-1.5 mr-1">
           <Header headerName="CONTROL ZONE" />
           <div className="h-2/4"></div>
-          <Header headerName="MESSAGES" TypeMSG />
+          <Header headerName="MESSAGES" TypeMSG buttons={<MSGModal/>}/>
         </div>
         <div className="bg-[#555355] w-full h-auto ml-2 mr-0">
           <Header headerName="CLR DEL" />

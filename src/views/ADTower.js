@@ -1,6 +1,9 @@
 import React from "react";
 import { Commandstrip } from "../components/CommandStrip";
 import { Header } from "../components/Header";
+import { NewVFRModal } from "../components/buttons/NewVFR";
+import { FindVFRModal } from "../components/buttons/FindVFR";
+import { MSGModal } from "../components/MSGModal";
 
 export const ADTower = () => {
   return (
@@ -21,11 +24,11 @@ export const ADTower = () => {
           <Header headerName="AIRBORNE" />
         </div>
         <div className="bg-[#555355] w-full h-auto ml-1.5 mr-1">
-          <Header headerName="CONTROL ZONE" />
+          <Header headerName="CONTROL ZONE" buttons={<><NewVFRModal /><FindVFRModal /></>}/>
           <div className="h-2/6"></div>
           <Header headerName="PUSHBACK" />
           <div className="h-1/4"></div>
-          <Header headerName="MESSAGES" TypeMSG />
+          <Header headerName="MESSAGES" TypeMSG buttons={<MSGModal/>}/>
         </div>
         <div className="bg-[#555355] w-full h-auto ml-2 mr-0">
           <Header headerName="CLR DEL" />

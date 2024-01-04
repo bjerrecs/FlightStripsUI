@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Layout } from "./Layout";
 import { Route, Routes } from "react-router";
 
 //Views
@@ -11,7 +10,7 @@ import { CTower } from "./views/CTower";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<CTower />}>
+      <Route path="/" element={<Delivery />}>
         <Route path="/apron" element={<Delivery />}/>
         <Route path="/apron" element={<Apron />}/>
         <Route path="/adtower" element={<ADTower />}/>

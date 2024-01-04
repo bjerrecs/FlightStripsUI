@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain  } = require('electron')
 const { mainMenu } = require("./menu")
 
 
@@ -19,7 +19,12 @@ function createWindow () {
   win.webContents.openDevTools()
   win.AspectRatio(1.77777777778);
   win.setApplicationMenu(mainMenu);
+  ipcMain.on('navigate', (event, route) => {
+    win.webContents.send('navigate', route);
+  });
 }
+
+
 
 app.whenReady().then(createWindow)
 

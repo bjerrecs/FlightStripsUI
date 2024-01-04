@@ -1,13 +1,14 @@
 import React from "react";
 import { Commandstrip } from "../components/CommandStrip";
 import { Header } from "../components/Header";
+import { MSGModal } from "../components/MSGModal";
 
 export const Apron = () => {
   return (
     <div className="h-screen">
       <div className="bg-[#A9A9A9] w-screen h-full flex justify-center justify-items-center shrink">
         <div className="bg-[#555355] w-full h-auto ml-0 mr-2">
-          <Header headerName="MESSAGES" TypeMSG />
+          <Header headerName="MESSAGES" TypeMSG buttons={<MSGModal/>}/>
           <div className="h-1/4"></div>
           <Header headerName="RWY ARR" />
           <div className="h-2/4"></div>

@@ -4,19 +4,35 @@ const isMac = process.platform === "darwin";
 
 const template = [
   {
-    label: "View",
+    label: "DEV",
     submenu: [
-      { role: "reload" },
+      { role: "toggleDevTools" },
+    ],
+  },
+  {
+    label: "Views",
+    submenu: [
+      {
+        label: "EKCH DEL",
+        click() {
+          menu.webContents.send("navigate", "/");
+        },
+      },
+      { type: "separator" },
+    ],
+  },
+  {
+    label: "Window",
+    submenu: [
       { role: "forceReload" },
       { role: "togglefullscreen" },
-      { type: "separator" },
-      { role: "toggleDevTools" }
     ],
   },
   {
     label: "Misc",
     submenu: [{ label: "VATCAN Event Code" }, { type: "separator" }],
   },
+
   {
     role: "help",
 

@@ -1,6 +1,10 @@
 import React from "react";
+import { ATIS } from "./atis";
+import { RunwayConfig } from "./RunwayConfig";
+import ZuluTime from "./time";
 
 export const Commandstrip = () => {
+
   return (
     <div className="bg-[#3C3C3C] w-screen h-16 absolute bottom-0 flex items-center pl-2 justify-between">
       <div className="pl-2 pr-2 flex items-center text-3xl font-extrabold">
@@ -9,20 +13,14 @@ export const Commandstrip = () => {
         </div>
 
         <span className=" text-white ml-2 mr-2">DEP</span>
-        <div className="bg-white w-fit h-12 ml-2 mr-2 pl-2 pr-2  flex items-center text-center">
-          22R
-        </div>
+        <RunwayConfig runway="22R"/>
         <span className="  text-white ml-2 mr-2">ARR</span>
-        <div className="bg-white w-fit h-12 ml-2 mr-2 pl-2 pr-2   flex items-center text-center">
-          22L
-        </div>
+        <RunwayConfig runway="22R"/>
         <span className="  text-white ml-2 mr-2">QNH</span>
         <div className="bg-black text-white w-fit h-12 ml-2 mr-2 pl-2 pr-2  flex items-center text-center">
           1040
         </div>
-        <button className="bg-[#646464] border-white border-2 w-fit h-12 pl-2 pr-2  ml-1 text-white">
-          ATIS
-        </button>
+        <ATIS />
         <div className="bg-white w-12 h-12 ml-2 mr-2 justify-center items-center flex">
           D
         </div>
@@ -44,7 +42,7 @@ export const Commandstrip = () => {
           X
         </button>
         <div className="bg-white w-fit h-12 ml-2 mr-2 justify-center items-center flex pl-4 pr-4">
-          19:24:56z
+          <ZuluTime />
         </div>
       </div>
     </div>
