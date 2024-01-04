@@ -16,27 +16,25 @@ export const FindFlight = (props) => {
   return (
     <>
       <Button onPress={onOpen} radius="none" className="bg-[#646464] pl-4 pr-4 border-white border-2 mr-1 text-white text-xl">FIND</Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="xs">
-        <ModalContent>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="xs" radius="none" classNames={{
+        body: "py-6",
+        backdrop: "bg-[#000]/50 backdrop-opacity-40",
+        base: "border-[#292f46] bg-[#e4e4e4] text-[#a8b0d3] drop-shadow-2xl"
+      }}>
+        <ModalContent radius="none">
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
-                FIND FLIGHT
-              </ModalHeader>
               <ModalBody>
-                <Input placeholder="OYDDA" label="C/S" size="lg">
-                  
+                <h1 className="text-2xl w-full text-center font-bold text-[#3F3F3F]">C/S</h1>
+                <Input className="drop-shadow" size="lg" radius="none" classNames="text-lg">
+
                 </Input>
-                <div className="flex justify-around">
-
-
-                </div>
               </ModalBody>
               <ModalFooter className=" justify-center">
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button radius="none" size="lg" className="text-xl bg-[#3F3F3F] text-white m-4" onPress={onClose}>
                   ESC
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button radius="none" size="lg" className="text-xl bg-[#3F3F3F] text-white m-4" onPress={onClose}>
                   SEARCH
                 </Button>
               </ModalFooter>
