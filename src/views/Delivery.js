@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { Strip } from "../components/Strip";
 import { MSGModal } from "../components/MSGModal";
 import { FindFlight } from "../components/buttons/FindFlight";
+import PushbackModal from "../components/PushbackModal";
 
 export const Delivery = () => {
   return (
@@ -12,6 +13,7 @@ export const Delivery = () => {
         <div className="bg-[#555355] w-full h-auto ml-0 mr-2">
           <Header headerName="OTHERS" buttons={<FindFlight/>}/>
           <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400"/>
+          <PushbackModal />
         </div>
         <div className="bg-[#555355] w-full h-auto ml-1 mr-1.5">
           <Header headerName="SAS" />
