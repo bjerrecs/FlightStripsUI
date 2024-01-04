@@ -2,7 +2,7 @@ import React from "react";
 import { Commandstrip } from "../components/CommandStrip";
 import { Header } from "../components/Header";
 import { NewVFRModal } from "../components/buttons/NewVFR";
-import { FindVFRModal } from "../components/buttons/FindVFR";
+import { FindFlight } from "../components/buttons/FindFlight";
 import { MSGModal } from "../components/MSGModal";
 
 export const ADTower = () => {
@@ -24,7 +24,7 @@ export const ADTower = () => {
           <Header headerName="AIRBORNE" />
         </div>
         <div className="bg-[#555355] w-full h-auto ml-1.5 mr-1">
-          <Header headerName="CONTROL ZONE" buttons={<><NewVFRModal /><FindVFRModal /></>}/>
+          <Header headerName="CONTROL ZONE" buttons={<><NewVFRModal /><FindFlight /></>}/>
           <div className="h-2/6"></div>
           <Header headerName="PUSHBACK" />
           <div className="h-1/4"></div>

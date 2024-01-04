@@ -10,7 +10,7 @@ import {
   Input,
 } from "@nextui-org/react";
 
-export const FindVFRModal = (props) => {
+export const FindFlight = (props) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
@@ -21,7 +21,7 @@ export const FindVFRModal = (props) => {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
-                FIND VFR FLIGHT
+                FIND FLIGHT
               </ModalHeader>
               <ModalBody>
                 <Input placeholder="OYDDA" label="C/S" size="lg">

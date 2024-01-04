@@ -3,13 +3,14 @@ import { Commandstrip } from "../components/CommandStrip";
 import { Header } from "../components/Header";
 import { Strip } from "../components/Strip";
 import { MSGModal } from "../components/MSGModal";
+import { FindFlight } from "../components/buttons/FindFlight";
 
 export const Delivery = () => {
   return (
     <div className="h-screen">
       <div className="bg-[#A9A9A9] w-screen h-full flex justify-center justify-items-center shrink">
         <div className="bg-[#555355] w-full h-auto ml-0 mr-2">
-          <Header headerName="OTHERS" />
+          <Header headerName="OTHERS" buttons={<FindFlight/>}/>
           <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400"/>
         </div>
         <div className="bg-[#555355] w-full h-auto ml-1 mr-1.5">
