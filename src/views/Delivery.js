@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import { Strip } from "../components/Strip";
 import { MSGModal } from "../components/MSGModal";
 import { FindFlight } from "../components/buttons/FindFlight";
-import PushbackModal from "../components/PushbackModal";
+import { HalfStrip } from "../components/HalfStrip";
 
 export const Delivery = () => {
   return (
@@ -12,7 +12,7 @@ export const Delivery = () => {
       <div className="bg-[#A9A9A9] w-screen h-[calc(100vh-4rem)] flex justify-center justify-items-center shrink">
         <div className="bg-[#555355] w-full h-auto border-r-4 border-[#a9a9a9]">
           <Header headerName="OTHERS" buttons={<FindFlight />} />
-            <div className="h-full overflow-auto overflow-x-hidden">
+            <div className="h-[calc(100%-2.5rem)] overflow-auto overflow-x-hidden">
             <Strip callsign="FIRST" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
@@ -27,8 +27,15 @@ export const Delivery = () => {
             <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="LAST" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
-            <PushbackModal />
           </div>
         </div>
         <div className="bg-[#555355] h-full w-full border-l-2 border-r-2 border-[#a9a9a9]">
@@ -55,20 +62,73 @@ export const Delivery = () => {
             <Strip callsign="NZS3096" ades="EKBI" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS38F" ades="EGKK" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NOZ662" ades="EKYT" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS3096" ades="EKBI" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS38F" ades="EGKK" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="LAST" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
           </div>
         </div>
         <div className="bg-[#555355] w-full h-auto border-l-2 border-r-2 border-[#a9a9a9]">
           <Header headerName="CLEARED" />
-          <div className="h-2/4">
+          <div className="h-[calc(50%-2.5rem)] overflow-auto overflow-x-hidden">
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
           </div>
           <Header headerName="MESSAGES" TypeMSG buttons={<MSGModal />} />
+          <div className="h-[calc(33%-2.5rem)] overflow-auto overflow-x-hidden">
+
+          </div>
         </div>
         <div className="bg-[#555355] w-full h-auto border-l-2 border-[#a9a9a9]">
           <Header headerName="PUSHBACK" />
-          <div className="h-1/3">
-            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" /></div><Header headerName="TWY DEP" />
+          <div className="h-[calc(33%-2.5rem)] overflow-auto overflow-x-hidden">
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+          </div>
+          <Header headerName="TWY DEP" />
+          <div className="h-[calc(66%-2.5rem)] overflow-auto overflow-x-hidden">
+          <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+            <HalfStrip />
+          </div>
         </div>
       </div>
       <Commandstrip />
