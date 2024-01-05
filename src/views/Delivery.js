@@ -8,17 +8,33 @@ import PushbackModal from "../components/PushbackModal";
 
 export const Delivery = () => {
   return (
-    <div className="h-screen">
-      <div className="bg-[#A9A9A9] w-screen h-full flex justify-center justify-items-center shrink">
+    <>
+      <div className="bg-[#A9A9A9] w-screen h-[calc(100vh-4rem)] flex justify-center justify-items-center shrink">
         <div className="bg-[#555355] w-full h-auto border-r-4 border-[#a9a9a9]">
           <Header headerName="OTHERS" buttons={<FindFlight />} />
-          <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
-          <PushbackModal />
+            <div className="h-full overflow-auto overflow-x-hidden">
+            <Strip callsign="FIRST" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="VKG1332/t" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="LAST" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
+            <PushbackModal />
+          </div>
         </div>
-        <div className="bg-[#555355] w-full h-auto border-l-2 border-r-2 border-[#a9a9a9]">
+        <div className="bg-[#555355] h-full w-full border-l-2 border-r-2 border-[#a9a9a9]">
           <Header headerName="SAS" />
-          <div className="h-3/5 overflow-auto overflow-x-hidden">
-            <Strip callsign="SAS42T" ades="EKYT" stand="B6" eobt="1350" tsat="1400" ctot="1400" />
+          <div className="h-[calc(60%-2.5rem)] overflow-auto overflow-x-hidden">
+            <Strip callsign="FIRST" ades="EKYT" stand="B6" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="SAS7736" ades="LEPA" stand="B4" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="SAD43G" ades="ENGM" stand="B8" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="SAS418" ades="ESSA" stand="B7" eobt="1350" tsat="1400" ctot="1400" />
@@ -29,17 +45,17 @@ export const Delivery = () => {
             <Strip callsign="SAS928" ades="EKVG" stand="A11" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="SAS887" ades="KBOS" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="SAS42T" ades="EKYT" stand="B6" eobt="1350" tsat="1400" ctot="1400" />
-            <Strip callsign="SAS7736" ades="LEPA" stand="B4" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="LAST" ades="LEPA" stand="B4" eobt="1350" tsat="1400" ctot="1400" />
           </div>
           <Header headerName="NORWEGIAN" />
-          <div className="h-2/5 overflow-auto overflow-x-hidden">
-            <Strip callsign="NZS38F" ades="KBOS" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+          <div className="h-[calc(40%-2.5rem)] overflow-auto overflow-x-hidden">
+            <Strip callsign="FIRST" ades="KBOS" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NAX948" ades="ENGM" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NOZ662" ades="EKYT" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS3096" ades="EKBI" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS38F" ades="EGKK" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
             <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
-            <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
+            <Strip callsign="LAST" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
           </div>
         </div>
         <div className="bg-[#555355] w-full h-auto border-l-2 border-r-2 border-[#a9a9a9]">
@@ -56,6 +72,6 @@ export const Delivery = () => {
         </div>
       </div>
       <Commandstrip />
-    </div>
+    </>
   );
 };
