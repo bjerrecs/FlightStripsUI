@@ -38,7 +38,7 @@ export const Delivery = () => {
             <Strip callsign="LAST" ades="LGPR" stand="D3" eobt="1350" tsat="1400" ctot="1400" />
           </div>
         </div>
-        <div className="bg-[#555355] h-full w-full border-l-2 border-r-2 border-[#a9a9a9]">
+        <div className="bg-[#555355] h-full w-full border-l-4 border-r-4 border-[#a9a9a9]">
           <Header headerName="SAS" />
           <div className="h-[calc(60%-2.5rem)] overflow-auto overflow-x-hidden">
             <Strip callsign="FIRST" ades="EKYT" stand="B6" eobt="1350" tsat="1400" ctot="1400" />
@@ -69,7 +69,7 @@ export const Delivery = () => {
             <Strip callsign="LAST" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
           </div>
         </div>
-        <div className="bg-[#555355] w-full h-auto border-l-2 border-r-2 border-[#a9a9a9]">
+        <div className="bg-[#555355] w-full h-auto border-l-4 border-r-4 border-[#a9a9a9]">
           <Header headerName="CLEARED" />
           <div className="h-[calc(50%-2.5rem)] overflow-auto overflow-x-hidden">
             <Strip callsign="NZS342" ades="ESSA" stand="B10" eobt="1350" tsat="1400" ctot="1400" />
