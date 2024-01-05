@@ -13,7 +13,7 @@ export const ATIS = (props) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <>
-      <Button onPress={onOpen} radius="none" className="bg-[#646464] border-white border-2 w-fit h-12 pl-2 pr-2  ml-1 text-white text-3xl font-extrabold">ATIS</Button>
+      <Button onPress={onOpen} radius="none" className="bg-[#646464] border-white border-2 w-fit h-12 pl-6 pr-6  ml-1 text-white text-3xl font-bold">ATIS</Button>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="5xl" radius="none" classNames={{
         backdrop: "bg-[#000]/50 backdrop-opacity-40",
         base: "border-[#292f46] bg-[#e4e4e4] drop-shadow-2xl"

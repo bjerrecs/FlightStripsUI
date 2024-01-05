@@ -11,7 +11,7 @@ function ZuluTime() {
     return () => clearInterval(interval);
   }, []);
 
-  return <>{time.getUTCHours()}:{time.getUTCMinutes()}:{time.getUTCSeconds()}z</>;
+  return <p className='text-xl'>{time.getUTCHours()}:{time.getUTCMinutes()}:{time.getUTCSeconds()}z</p>;
 }
 export default ZuluTime;
 
